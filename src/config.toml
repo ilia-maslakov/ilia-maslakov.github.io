@@ -1,0 +1,73 @@
+baseURL = "https://cezarypiatek.github.io/"
+relativeURLs = true
+languageCode = "en-us"
+title = "Cezary Piątek Blog"
+theme = "hugo-geo"
+disqusShortname= "cezarypiatek-github-io"
+publishDir = "../"
+paginate = 5
+enableGitInfo = true
+[params]
+	profilepic = "images/7759991.jpg"
+	title = "CEZARY PIĄTEK"
+	subtitle = "Natural born software developer"
+	header = "Resolve all using mine"
+	analytics = "UA-18735584-9"
+	addThis = "ra-5a286b9b1c027c15"
+	
+	[[params.socialbuttons]]
+	faicon = "github"
+	url = "https://github.com/cezarypiatek"
+	title = "Check my Open Source works"
+	
+	[[params.socialbuttons]]
+	faicon = "twitter"
+	url = "https://twitter.com/intent/follow?original_referer=https%3A%2F%2Fpublish.twitter.com%2F%3FbuttonType%3DFollowButton%26query%3D%2540cezary_piatek%26widget%3DButton&ref_src=twsrc%5Etfw&region=follow_link&screen_name=cezary_piatek&tw_p=followbutton"
+	title = "Follow me on Twitter"
+		
+	[[params.socialbuttons]]
+	faicon = "linkedin"
+	url = "https://www.linkedin.com/in/cezary-pi%C4%85tek-373737185/"
+	title = "Follow me on LinkedIn"
+
+	[[params.socialbuttons]]
+	faicon = "stack-overflow"
+	url = "https://stackoverflow.com/users/876060/cezarypiatek"
+	title = "Check my StackOverflow profile"
+	
+	[[params.socialbuttons]]
+	faicon = "rss"
+	url = "/index.xml"	
+	title = "Be up to date - subscribe to my rss feed channel"
+	
+	[[params.navlinks]]
+	name = "Blog"
+	url = ""
+
+	[[params.navlinks]]
+	name = "Projects"
+	url = "projects/"
+
+	[[params.navlinks]]
+	name = "Public speaking"
+	url = "public-speaking/"
+
+	[[params.navlinks]]
+	name = "About me"
+	url = "about/"
+
+[related]
+
+	# Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.
+	threshold = 80
+
+	# To get stable "See also" sections we, by default, exclude newer related pages.
+	includeNewer = true
+
+	# Will lower case keywords in both queries and in the indexes.
+	toLower = false
+
+	[[related.indices]]
+	name  = "tags"
+	weight = 100
+	toLower = true

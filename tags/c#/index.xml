@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on Cezary Piątek Blog</title>
+    <link>https://cezarypiatek.github.io/tags/c#/</link>
+    <description>Recent content in C# on Cezary Piątek Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Aug 2020 00:11:45 +0200</lastBuildDate>
+    
+	<atom:link href="https://cezarypiatek.github.io/tags/c#/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Working efficiently with legacy database using Dapper</title>
+      <link>https://cezarypiatek.github.io/post/dapper-tips-and-tricks/</link>
+      <pubDate>Sun, 02 Aug 2020 00:11:45 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/dapper-tips-and-tricks/</guid>
+      <description>A year ago I started working on a set of projects that requires accessing data from a huge legacy database. There was a decision to use Dapper to facilitate database access code. For those of you who are not familiar with Dapper, it&amp;rsquo;s a set of extension methods to IDbConnection, which allows to easily map C# object to SQL query parameters, as well as SQL query result to C# objects.</description>
+    </item>
+    
+    <item>
+      <title>The Magical Methods in C#</title>
+      <link>https://cezarypiatek.github.io/post/methods-with-special-signature/</link>
+      <pubDate>Tue, 30 Jun 2020 00:08:00 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/methods-with-special-signature/</guid>
+      <description>There&amp;rsquo;s a certain set of special method signatures in C# which have particular support on the language level. Methods with those signatures allow for using a special syntax which has several benefits. For example, we can use them to simplify our code or create DSL to express a solution to our domain-specific problem in a much cleaner way. I came across those methods in different places, so I decided to create a blog post to summarize all my discoveries on this subject.</description>
+    </item>
+    
+    <item>
+      <title>Twin types - properties synchronization without inheritance</title>
+      <link>https://cezarypiatek.github.io/post/csharp-twin-types/</link>
+      <pubDate>Sun, 14 Jun 2020 00:11:45 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/csharp-twin-types/</guid>
+      <description>A couple of months ago I&amp;rsquo;ve started working on a simple CRUD service. A mix of ASP Core for REST API with Dapper for Database access - probably one of the most popular stacks for this kind of application. Very quickly it turned out that it&amp;rsquo;s more complex than I expected and this &amp;ldquo;simple-boring&amp;rdquo; CRUD became more interesting and challenging.
+The Problem One of the first problems that I came across was that I had a lot of types that looked very similar but had some differences and served different purposes, like:</description>
+    </item>
+    
+    <item>
+      <title>Improving non-nullable reference types handling</title>
+      <link>https://cezarypiatek.github.io/post/better-non-nullable-handling/</link>
+      <pubDate>Tue, 24 Mar 2020 20:00:00 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/better-non-nullable-handling/</guid>
+      <description>A few weeks ago I started using non-nullable reference types - a new C# language feature which was shipped with version 8.0. It wasn&amp;rsquo;t a completely new experience for me, because I was working before on projects that were heavily utilizing [NotNull] and [CanBeNull] Resharper annotations. The way how non-nullable types are handled by Roslyn seems to be a little more complex in comparison to Resharper - there are around 40 different diagnostics related to this area.</description>
+    </item>
+    
+    <item>
+      <title>Immutable types in C# with Roslyn</title>
+      <link>https://cezarypiatek.github.io/post/immutable-types-with-roslyn/</link>
+      <pubDate>Sun, 15 Mar 2020 00:08:00 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/immutable-types-with-roslyn/</guid>
+      <description>Some time ago I came across Jimmy Bogard&amp;rsquo;s article &amp;ldquo;Immutability in DTOs?&amp;rdquo; about the pros and cons of using immutable type pattern/approach. I fully agree with the author - the idea of immutable types is great but without the proper support from the language syntax it might not be worth applying. C# allows creating immutable types by adding readonly keyword to fields or by removing setter from properties. We are obligated then to initialize those readonly members from the constructor or directly in the member&amp;rsquo;s definition.</description>
+    </item>
+    
+    <item>
+      <title>How to simulate AutoMapper that works during the build time</title>
+      <link>https://cezarypiatek.github.io/post/generate-mappings-on-build/</link>
+      <pubDate>Sun, 01 Dec 2019 00:09:00 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/generate-mappings-on-build/</guid>
+      <description>Almost two years ago I created the very first version of MappingGenerator. Since then, I&amp;rsquo;ve put a lot of work in this project, adding new functions and improving the mapping generation algorithm with 14 releases (43 issues/feature requests closed) in the meantime. With over 5.5k downloads from the marketplace and 380 stars on Github, it looks like there is quite a market demand for this kind of tool (even though my coffee button statistics indicate something different).</description>
+    </item>
+    
+    <item>
+      <title>Managing output in the .NET SDK projects</title>
+      <link>https://cezarypiatek.github.io/post/managing-output-in-sdk-projects/</link>
+      <pubDate>Sun, 03 Nov 2019 00:11:45 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/managing-output-in-sdk-projects/</guid>
+      <description>With the new SDK format for .NET projects, it&amp;rsquo;s much easier to manage with the project&amp;rsquo;s dependencies. In most scenarios references added with standard mechanism (Visual Studio or dotnet cli) result in sufficient content in the output directory. However, sometimes we want to do something non-standard that requires a slightly different set of components in the output dir - simply speaking we expect to see there either more or fewer files.</description>
+    </item>
+    
+    <item>
+      <title>Non-nullable references with C# 8 and .NET Core 3.0</title>
+      <link>https://cezarypiatek.github.io/post/non-nullable-references-in-dotnet-core/</link>
+      <pubDate>Sun, 06 Oct 2019 00:16:45 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/non-nullable-references-in-dotnet-core/</guid>
+      <description>Two weeks ago .NET Core 3.0 was officially published. Together with the new framework version, Visual Studio 2019 got support for a long-awaited C# 8.0. The complete list of the new language features is available here on the MSDN, but the one that deserves special attention is Nullable reference types. This is a very important change in the language semantic, because from now we will be able to eliminate certain class of errors related to reference nullability on the compilation stage.</description>
+    </item>
+    
+    <item>
+      <title>Avoid thread synchronization problems with Roslyn: Synchronization primitives traps</title>
+      <link>https://cezarypiatek.github.io/post/avoid-multithreading-traps-p2/</link>
+      <pubDate>Sun, 15 Sep 2019 00:10:00 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/avoid-multithreading-traps-p2/</guid>
+      <description>Multithreading is one of the most difficult aspects of programming and can cause a lot of headaches. The main source of problems is often the improper usage of synchronization mechanisms, which can result in deadlocks or a complete lack of synchronization despite our expectations. The effect of the broken synchronization can be analyzed with various runtime tools, but it would be nice to have an asset that is able to report all those issues in the design time right on the stage of writing code.</description>
+    </item>
+    
+    <item>
+      <title>CSharp Macros - let the Roslyn type for you</title>
+      <link>https://cezarypiatek.github.io/post/csharp-macros/</link>
+      <pubDate>Sun, 01 Sep 2019 00:11:45 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/csharp-macros/</guid>
+      <description>I&amp;rsquo;m a programmer but I don&amp;rsquo;t like to write code. OK, it&amp;rsquo;s not the whole truth. I don&amp;rsquo;t like to write the code that is repeatable. Whenever I need to do something more than twice, I start thinking about automation. Hopefully, this problem can be addressed with code snippets. Visual Studio provides a predefined set of snippets that can be extended, but if you are a Resharper user you should definitely get to know LiveTemplates because it&amp;rsquo;s more powerful and easier to configure.</description>
+    </item>
+    
+    <item>
+      <title>Avoid multithreading traps with Roslyn: Lock object selection</title>
+      <link>https://cezarypiatek.github.io/post/avoid-multithreading-traps-p1/</link>
+      <pubDate>Sun, 18 Aug 2019 00:11:45 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/avoid-multithreading-traps-p1/</guid>
+      <description>Multithreading is one of the most difficult aspects of programming and can cause a lot of headaches. The main source of problems is often improper usage of synchronization mechanisms, which can result in deadlocks or a complete lack of synchronization despite our expectations. The infamous deadlocks can be detected in runtime thanks to tools like Concurrency Visualizer, Parallel Tasks Window or with WinDBG !dlk command. However, these tools are often used only after some unexpected behavior is observed, but it would be nice to reduce the feedback loop and detect these issues in design time.</description>
+    </item>
+    
+    <item>
+      <title>Exception usage analyzer</title>
+      <link>https://cezarypiatek.github.io/post/exceptions-usages-analyzer/</link>
+      <pubDate>Sat, 29 Jun 2019 00:09:00 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/exceptions-usages-analyzer/</guid>
+      <description>Over a year ago I wrote a blog post about designing exceptions. I found this article very useful by myself and I used it as a reference a few times during code review. However, it&amp;rsquo;s almost impossible to expect that, after reading the recommended resource, anybody would start to apply described rules immediately and remember about them all the time. It&amp;rsquo;s a learning process and it takes some time. A while ago I got interested with Roslyn (I even delivered a public presentation about it - polish recording available here) and there is a really cool thing about Roslyn analyzers that can solve this problem - they help to actively introduce best practices into your codebase.</description>
+    </item>
+    
+    <item>
+      <title>Renovate your .NET solution</title>
+      <link>https://cezarypiatek.github.io/post/renovate-your-dot-net-solution/</link>
+      <pubDate>Mon, 11 Feb 2019 00:20:45 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/renovate-your-dot-net-solution/</guid>
+      <description>In the early days of dotnet core, there was an attempt of changing the C# project file format. The old &amp;ldquo;csproj&amp;rdquo; based on XML format was replaced with .xproj/project.json. However, after releasing dotnet core 1.0 the authors decided to get back to XML file. The format stayed the same but the specification went through a major change. With the new schema, a lot of improvements come into .net development and they are not restricted only to dotnet core projects.</description>
+    </item>
+    
+    <item>
+      <title>The art of designing exceptions</title>
+      <link>https://cezarypiatek.github.io/post/the-art-of-designing-exceptions/</link>
+      <pubDate>Fri, 19 Oct 2018 00:09:00 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/the-art-of-designing-exceptions/</guid>
+      <description>Have you ever been in a situation when you discovered an exception in the logs that forced you to spend the next couple of minutes - or even hours - figuring out what exactly went wrong? The message was very cryptic and the only useful information that guided you to the crime scene was a stack trace. And after arriving there, you still had no idea what had really happened and what was the culprit.</description>
+    </item>
+    
+    <item>
+      <title>Generate mapping code with Roslyn code fix provider.</title>
+      <link>https://cezarypiatek.github.io/post/generate-mapping-code-with-roslyn/</link>
+      <pubDate>Tue, 27 Feb 2018 00:23:45 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/generate-mapping-code-with-roslyn/</guid>
+      <description>A few weeks ago I posted about negative aspects of applying AutoMapper. As an alternative I suggested typing all mapping code by hand or utilize some kind of generator like T4Scaffoling or something Roslyn based. In the past I experimented with T4Scaffoling but it was quite tedious. It requires preparation of templates in T4 syntax, referencing it to the project and writing some PowerShell code to provide data for templates. There also was an issue with assembly locking.</description>
+    </item>
+    
+    <item>
+      <title>The reasons behind why I don&#39;t use AutoMapper.</title>
+      <link>https://cezarypiatek.github.io/post/why-i-dont-use-automapper/</link>
+      <pubDate>Mon, 05 Feb 2018 00:22:00 +0200</pubDate>
+      
+      <guid>https://cezarypiatek.github.io/post/why-i-dont-use-automapper/</guid>
+      <description>The idea behind this blog post is pretty old but I haven&amp;rsquo;t had enough motivation to write this down till now. Recently, I&amp;rsquo;ve came across a couple of new articles about AutoMapper and I&amp;rsquo;ve been struck when I saw how people utilize AutoMapper in their projects. I&amp;rsquo;ve encountered cases when AutoMapper transforms simple thing like mapping values from object to other into a really complex problem, which results with highly complicated code only for the price of not writing mappings explicitly.</description>
+    </item>
+    
+  </channel>
+</rss>
