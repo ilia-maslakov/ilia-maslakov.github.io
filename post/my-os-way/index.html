@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+	<meta name="theme-color" content="#ffffff">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="Midnight Commander: My way">
+	<script type="application/ld+json">
+        {
+          "@context" : "http://schema.org",
+          "@type": "BlogPosting",
+            "mainEntityOfPage":{
+            "@type":"WebPage",
+            "@id":"https:\/\/ilia-maslakov.github.io\/post\/mc-os-way\/"
+            },
+          "headline" : "Midnight Commander: My way",
+          "author" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          },
+          "publisher" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          }
+        }
+        </script>
+
+	<meta property="article:published_time" content="2009-09-25">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:url" content="https://ilia-maslakov.github.io/post//">
+	<meta property="og:title" content="Как я был опенсорсником…">
+	<meta property="og:image" content="https://ilia-maslakov.github.io/post/mc-os-way/mc.jpg">
+	<meta property="og:description" content="Как я был опенсорсником…">
+	<meta property="og:site_name" content="Ilia Maslakov Blog">
+	<meta property="og:tags" content="mc">
+	<meta property="og:tags" content="open source">
+	<meta property="og:tags" content="c">
+
+	<meta name="keywords" value="mc, open source, c" />
+	<meta name="generator" content="mcedit" />
+	<title>Как я был опенсорсником… &middot; Ilia Maslakov Blog</title>
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css">
+
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/css/style.css">
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/lib/gifplayer/gifplayer.css">
+
+	<link href="https://ilia-maslakov.github.io/index.xml" rel="alternate" type="application/rss+xml"
+		title="Ilia Maslakov Blog" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+	<link rel="manifest" href="../../manifest.json">
+	<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="https://ilia-maslakov.github.io/">Ilia Maslakov</a>
+
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+
+					<li><a href="https://ilia-maslakov.github.io/">Blog</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/projects/">Projects</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/about/">About me</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+				<div id="menu-content" class="vertical-align">
+					<h1 class="text-center"><a href="https://ilia-maslakov.github.io/">Ilia Maslakov</a></h1>
+					<small class="text-center center-block">Born to code</small>
+					<img id="profile-pic" src="https://ilia-maslakov.github.io/images/7515072.jpg" alt="it's me" class="img-circle center-block">
+
+					<div id="social" class="text-center">
+						<a href="https://github.com/ilia-maslakov" title="Check my Open Source works"><i class="fa fa-github fa-2x"></i></a>
+						<a href="https://www.linkedin.com/in/ilia-maslakov/" title="Follow me on LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
+						<a href="../../index.xml" title="Be up to date - subscribe to my rss feed channel"><i class="fa fa-rss fa-2x"></i></a>
+					</div>
+					<div id="links" class="text-center">
+						<a href="https://ilia-maslakov.github.io/">Blog</a>
+						<a href="https://ilia-maslakov.github.io/projects/">Projects</a>
+						<a href="https://ilia-maslakov.github.io/about/">About me</a>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+				<div class="row">
+					<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+						<main>
+
+							<article>
+
+								<header>
+									<h1>Как я был опенсорсником…</h1>
+	
+									<div><i class="fa fa-calendar"></i> <time>25 сентября 2009</time></div>
+									<hr />
+	
+								</header>
+	
+<h4>Давным-давно, в одной далекой-предалекой Галактике…</h4>
+Все началось довольно прозаично... было желание доработать программный продукт, но не было ни малейшего представления, как оно там все устроено... и это было давно, очень давно...
+
+&nbsp;&nbsp;<b>Году наверное в 2003-м...</b> к тому времени я уже довольно таки долгое время являлся пользователем дистрибутива Slackware, так что о том как собирать ПО я знал уже неплохо, но вот знания "си" мне сильно не хватало (забегая вперед признаюсь, я и сейчас его  не очень то знаю :) . Тем не менее сильно хотелось добавить одну полезную для меня фичу в Midnight Commander. А именно опцию сортировки файлов, когда первыми идут "исполняемые файлы", как это сделано например в far. С помощью аськи, глупых вопросов  к приятелям-сишникам и упорства достойного лучшего применения, худо бедно удалось сделать то что хотел... хотя и криво... Но главное оно работало! (какой же кайф угробить 2 дня но сделать то что хотел)
+Больше к mc я не притрагивался остановившись на достигнутом... Шли годы... :)
+<habracut />
+<h4>ASUS wl-500gP</h4>
+&nbsp;&nbsp;В какой то момент времени, года 2-3 назад, я стал счастливым владельцем забавной белой коробочки, с гордым названием - Asus WL500g Premium. Т.к. с родным mc из репозитария oleo все было совсем "не очень", то пришлось садиться и пилить чтобы можно было худо бедно иметь возможность работать с именами в UTF-8... Попилить пришлось изрядно ибо с UTF-8 патчами от Дебиана и FC собираться mc на коробочке наотрез отказался, было не просто, но я таки асилил... (сам был в шоке:) ). Учитывая практически нулевое знание си, процесс несколько затянулся. Но когда все было закончено результат в виде готового пакета я выложил на соответствующем форуме, для таких же страждущих UTF в mc на "коробочке".
+
+&nbsp;&nbsp;В результате ковыряний я конечно не изучил си, просто понял что в принципе достаточно немного упорства и терпения чтобы делать небольшие патчи. Главное не ломать слишком сильно систему и пользоваться приемами XP (<i>Extreme Programming</i>) такие как Непрерывная работоспособность кода и т.п. Так я и решился взяться за первый проект под "коробочку" это легкий DC++ клиент который мог бы работать на совсем дохлом железе, имел хорошую поддержку национальных языков и мог раздавать и принимать файлы частями и из разных источников. В качестве концепции была выбран подход утилиты wget, т.е. отдаем ссылку утилите, а она дальше занимается всем сама и завершает работу, когда дело будет сделано. Так родилась идея консольного DC++ клиента dcget. Отсмотрев множество легковесных открытых проектов, был найден <b>ShakesPeer</b>, который является клиент-серверной реализацией DC++ клиента, в основе которого лежит общение через сокеты UI и собственно движком который занимается закачкой и раздачей контента.
+Вот его то я и решил форкнуть, добавив недостающего мне функционала. Задача была не такая сложная, но навигация по чужому коду доставляла множество неудобств, требовался подходящий редактор. Мне очень не хватало редактора похожего на редактор far со сходными сочетаниями клавиш, и его возможностями работы с исходным кодом, вроде перехода к определению функций и прочих приятных мелочей присущим удобным редакторам. Чтобы совсем уж не бедствовать я настроил в vim необходимые средства превращающие его в IDE и потихоньку им пользовался. Но тяжело переучивать старую собаку новым трюкам. Помнить на автомате 3 набора горячих клавиш для меня оказалось просто непосильной задачей, причем бывало что поработав в far я на автомате портил текст в vim и наоборот... бывало что без мата не обходилось (где то я это уже говорил...:).
+
+<h4>Midnight Commander</h4>
+&nbsp;&nbsp;Тем временем я наткнулся на новость на opennet о том, что появилась новая версия mc с дополнительными патчами, вроде  раскраски файлов и прочих полезных мелочей, (многие из которых, кстати говоря, уже были в моей сборке под "коробочку") и решил связаться с командой в плане "поделиться опытом" и отдать пару своих мелких патчей из сборки под WL500gP. Как оказалось ребята были "дружным молодым, перспективным коллективом" (<b>™</b>) :) с которым просто найти общий язык и взаимопонимание. Все что нужно было сделать чтобы вступить в команду это сделать приватный и публичный ключ и отправить полученный публичный ключ Патрику Винертзу, чтобы меня зарегистрировали на сайте Миднайт коммандера и я получил доступ на запись в git репозтарий. Так вот все и началось...
+
+&nbsp;&nbsp;Итак, что было в сухом остатке: неумение пользоваться git, незнание языка си, опыт программирования на многих языках и большое желание сделать mcedit более удобным  в использовании редактором, имеющим тот же набор фич что и far. Первый принятый мой патч был как раз патч реализующий отображение исполняемых файлов в начале списка. На этот раз патч был реализован идеологически верно и не являлся грязным хаком. К счастью в команде были те, кто отсматривал мои патчи и проводил большую работу по ревизии моего кода без них я бы наверное не осилил бы и десятой части написанного. В результате у меня появился редактор полностью удовлетворяющий мои потребности в плане использования его в качестве IDE. И что самое интересное - практически всё что мне было нужно там и так было, только зарыто так глубоко что и не добраться, либо в немного "недопиленном" состоянии. В общем, чем больше капался с текстом редактора, тем больше находил недореализованных фич, иногда бывало забавно, что доделав очередной патч находил подобную же реализацию, в самом неожиданном месте, после чего удалял свое и дорабатывал то что есть до нужной кондиции... Подход в основном был такой - по максимуму сделать свой код простым и понятным для дальнейшего сопровождения и по максимуму вписывающимся в общую концепцию и стиль проекта. 
+
+Так вот я и стал типичным красноглазым опенсорсником :), вечером кодинг для души, днем написание отчетов и форм в компании где я работаю.
+
+<h4>Выводы</h4>
+&nbsp;&nbsp;Кстати говоря, писать открытый код, это просто халява с точки зрения программиста :), все что нужно как правило было написано до тебя,  и надо всего лишь  найти нужный тебе код и удачно скопипастить :) Я понимаю конечно что все рано или поздно надоедает и заканчивается... даже самые интересные вещи. А есть еще и совсем неинтересные, типа поиска и исправления не очевидных и сложно-повторяемых багов, но что поделаешь попав в секту так просто из нее не выбраться :)) Но надеюсь произойдет это, не раньше исправления последней критической проблемы, как то пока не хочется подводить ребят...
+
+&nbsp;&nbsp;Работа в команде это конечно отдельная тема... интереснейший опыт с точки зрения программиста - ревизии кода, парное программирование, обсуждения задач и способов возможной реализации и прочия-прочия-прочия... 
+
+<h4>fin</h4>
+PS: вот так вот, получив нужный и удобный инструмент для работы над своей поделкой - <b>dcget</b>, потерял, практически полный, к ней интерес... се ля ви :)
+
+							</article>
+
+
+							<br />
+
+						</main>
+
+						<div id="bottom-nav" class="text-center center-block">
+							<a href=" https://ilia-maslakov.github.io/" class="btn btn-default"><i
+									class="fa fa-home"></i> Home</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script>
+		if (window.location.hostname === "localhost") {
+			console.log("Analytics not running on local dev.");
+		} else {
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date(); a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-18735584-9', 'auto');
+			ga('send', 'pageview');
+			window.baseURL = "https:\/\/ilia-maslakov.github.io\/";
+		}
+	</script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+
+
+	<script src="../../lib/gifplayer/jquery.gifplayer.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("img[src$='_animated.png']").gifplayer({
+				label: "▶"
+			});
+		});
+	</script>
+	<script src="https://ilia-maslakov.github.io//js/App.js"></script>
+
+	<script type="text/javascript">
+		var addthis_share = addthis_share || {}
+		addthis_share = {
+			passthrough: {
+				twitter: {
+					via: "ilia_maslakov",
+					hashtags: "mc,skins,с"
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a286b9b1c027c15"
+		async></script>
+
+
+	<script src="//cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
+	<script>
+		$(function () {
+			$("#content").prognroll({
+				custom: true
+			});
+		});
+	</script>
+
+</body>
+
+</html>

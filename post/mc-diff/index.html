@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+	<meta name="theme-color" content="#ffffff">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="Midnight Commander 4.7.0-pre3">
+	<script type="application/ld+json">
+        {
+          "@context" : "http://schema.org",
+          "@type": "BlogPosting",
+            "mainEntityOfPage":{
+            "@type":"WebPage",
+            "@id":"https:\/\/ilia-maslakov.github.io\/post\/mc-4.7.0\/"
+            },
+          "headline" : "Midnight Commander 4.7.0",
+          "author" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          },
+          "publisher" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          },
+          "datePublished" : "2009-09-23",
+          "dateModified" : "2009-09-23",
+          "image" : "https:\/\/ilia-maslakov.github.io\/post\/mc-skins\/mc-black.jpg",
+          "description": "mc black schema"
+        }
+        </script>
+
+	<meta property="article:published_time" content="2009-09-22">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:url" content="https://ilia-maslakov.github.io/post//">
+	<meta property="og:title" content="Вышел Midnight Commander 4.7.0-pre3">
+	<meta property="og:image" content="https://ilia-maslakov.github.io/post/mc-skins/mc-black.jpg">
+	<meta property="og:description" content="Вышел Midnight Commander 4.7.0-pre3">
+	<meta property="og:site_name" content="Ilia Maslakov Blog">
+	<meta property="og:tags" content="mc">
+	<meta property="og:tags" content="codejump">
+	<meta property="og:tags" content="c">
+
+	<meta name="keywords" value="mc, c" />
+	<meta name="generator" content="mcedit" />
+	<title>Midnight Commander &middot; Ilia Maslakov Blog</title>
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css">
+
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/css/style.css">
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/lib/gifplayer/gifplayer.css">
+	<link href="https://ilia-maslakov.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Ilia Maslakov Blog" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+	<link rel="manifest" href="../../manifest.json">
+	<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="https://ilia-maslakov.github.io/">Ilia Maslakov</a>
+
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+
+					<li><a href="https://ilia-maslakov.github.io/">Blog</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/projects/">Projects</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/about/">About me</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+				<div id="menu-content" class="vertical-align">
+					<h1 class="text-center"><a href="https://ilia-maslakov.github.io/">Ilia Maslakov</a></h1>
+					<small class="text-center center-block">Born to code</small>
+					<img id="profile-pic" src="https://ilia-maslakov.github.io/images/7515072.jpg" alt="it's me" class="img-circle center-block">
+
+					<div id="social" class="text-center">
+						<a href="https://github.com/ilia-maslakov" title="Check my Open Source works"><i class="fa fa-github fa-2x"></i></a>
+						<a href="https://www.linkedin.com/in/ilia-maslakov/" title="Follow me on LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
+						<a href="../../index.xml" title="Be up to date - subscribe to my rss feed channel"><i class="fa fa-rss fa-2x"></i></a>
+					</div>
+					<div id="links" class="text-center">
+						<a href="https://ilia-maslakov.github.io/">Blog</a>
+						<a href="https://ilia-maslakov.github.io/projects/">Projects</a>
+						<a href="https://ilia-maslakov.github.io/about/">About me</a>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+				<div class="row">
+					<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+						<main>
+	
+							<article>
+								<header>
+									<h1>Превращаем Midnight Commander в консольный браузер для GIT</h1>
+	
+									<div><i class="fa fa-calendar"></i> <time>8 марта 2010</time></div>
+									<hr />
+								</header>
+                            <h4>Вместо предисловия...</h4>
+Мне давно хотелось отсматривать код примерно как это сделано в meld, но только в консоли, и еще мне хотелось чтобы это все было увязано с системой управления версиями файлов GIT. В общем чтобы все делалось 1 кнопкой не выходя из mc.
+
+<h5>Ydiff</h5>
+Однажды у нас на канале (или это было на траке...) проявился некто Daniel Borca пошумел-пошумел и убежал, видимо не понравилась ему наша бюрократия, но зато оставил он после себя несколько сыроватых патчей, к готовившемуся релизу 4.7.0-pre1 миднайт коммандера. 
+Один из них содержал в себе ydiff.[ch] и zdiff.[ch]... Как оказалось, то что я хотел получить, было давно уже реализовано в древнем форке <b>mc-mp</b> и в последней версии <b>ru-fork</b>. После 2-х дневного "перепиливания" я подключил функцию сравнения файлов к последней версии mc... Полдела было сделано. :)
+
+<h5>Просмотр репозитария GIT</h5>
+<h6>Панельный плагин gitfs</h6>
+Второй проблемой было то что мне хотелось бы просматривать патчи из репозитария GIT непосредственно в миднайт коммандер, прямо из каталога репозитария. И я задумался над написанием VFS для миднайт коммандер с помощью которого можно было бы производить навигацию по репозитарию в нужной панели. Через несколько минут "ковыряния" родился первый сырой вариант <b>gitfs</b>
+текущий полностью рабочий, но не окончательный вариант представлен ниже:
+<blockquote><font color="#666666">#!/bin/sh</font><br/>
+&nbsp;<br/>
+<font color="#007800">LANG</font>=C<br/>
+<font color="#7a0874">umask</font>&nbsp;077<br/>
+&nbsp;<br/>
+gitfs_list<font color="#7a0874">&#40;</font><font color="#7a0874">&#41;</font><br/>
+<font color="#7a0874">&#123;</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">DATE</font>=<font color="#000000">`</font><font color="#c20cb9">date</font>&nbsp;+<font color="#ff0000">&quot;%b&nbsp;%d&nbsp;%H:%M&quot;</font><font color="#000000">`</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">GIT_DIR</font>=<font color="#ff0000">&quot;$2/.git&quot;</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">user</font>=<font color="#000000">`</font><font color="#c20cb9">whoami</font><font color="#000000">`</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;git&nbsp;ls-files&nbsp;<font color="#000000">|</font>&nbsp;<font color="#000000">while</font>&nbsp;<font color="#c20cb9">read</font>&nbsp;fname<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">do</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#7a0874">echo</font>&nbsp;<font color="#ff0000">&quot;-r--r--r--&nbsp;&nbsp;&nbsp;1&nbsp;<font color="#007800">$user</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;0&nbsp;<font color="#007800">$DATE</font>&nbsp;<font color="#780078">`dirname&nbsp;$fname`</font>/(git)&nbsp;<font color="#780078">`basename&nbsp;$fname`</font>&quot;</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">done</font><br/>
+<font color="#7a0874">&#125;</font><br/>
+&nbsp;<br/>
+gitfs_copyout<font color="#7a0874">&#40;</font><font color="#7a0874">&#41;</font><br/>
+<font color="#7a0874">&#123;</font><br/>
+&nbsp;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#7a0874">echo</font>&nbsp;<font color="#660033">-e</font>&nbsp;<font color="#ff0000">&quot;$2&quot;</font>&nbsp;<font color="#000000">&gt;</font>&nbsp;<font color="#ff0000">&quot;$4&quot;</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#7a0874">echo</font>&nbsp;<font color="#ff0000">&quot;$3&quot;</font><font color="#000000">|</font><font color="#c20cb9">sed</font>&nbsp;<font color="#660033">-e</font>&nbsp;s<font color="#000000">/</font>\<font color="#7a0874">&#40;</font>git\<font color="#7a0874">&#41;</font>\&nbsp;<font color="#000000">//</font>&nbsp;<font color="#000000">&gt;&gt;</font>&nbsp;<font color="#ff0000">&quot;$4&quot;</font><br/>
+<font color="#7a0874">&#125;</font><br/>
+&nbsp;<br/>
+<font color="#000000">case</font>&nbsp;<font color="#ff0000">&quot;$1&quot;</font>&nbsp;<font color="#000000">in</font><br/>
+list<font color="#7a0874">&#41;</font>&nbsp;gitfs_list&nbsp;<font color="#ff0000">&quot;$@&quot;</font>&nbsp;<font color="#000000">;;</font><br/>
+copyout<font color="#7a0874">&#41;</font>&nbsp;gitfs_copyout&nbsp;<font color="#ff0000">&quot;$@&quot;</font>&nbsp;<font color="#000000">;;</font><br/>
+<font color="#000000">*</font><font color="#7a0874">&#41;</font>&nbsp;<font color="#7a0874">exit</font>&nbsp;<font color="#000000">1</font>&nbsp;<font color="#000000">;;</font><br/>
+<font color="#000000">esac</font><br/>
+<font color="#7a0874">exit</font>&nbsp;<font color="#000000">0</font><br/>
+&nbsp;<br/>
+&nbsp;<br/>
+&nbsp;</blockquote>
+<h6>Панельный плагин gitlogfs</h6>
+Мне хотелось не только производить навигацию по репозитарию, но так-же иметь возможность получать файлы любой ревизии. Для этого был написан плагин <b>gitlogfs</b>
+<blockquote><font color="#666666">#!/bin/sh</font><br/>
+&nbsp;<br/>
+<font color="#007800">LANG</font>=C<br/>
+&nbsp;<br/>
+changesetfs_list<font color="#7a0874">&#40;</font><font color="#7a0874">&#41;</font><br/>
+<font color="#7a0874">&#123;</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">DATE</font>=<font color="#000000">`</font><font color="#c20cb9">date</font>&nbsp;+<font color="#ff0000">&quot;%b&nbsp;%d&nbsp;%H:%M&quot;</font><font color="#000000">`</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">GIT_DIR</font>=<font color="#000000">`</font><font color="#c20cb9">head</font>&nbsp;<font color="#660033">-n1</font>&nbsp;$<font color="#000000">2</font><font color="#000000">`</font><font color="#ff0000">&quot;.git&quot;</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">fname</font>=<font color="#000000">`</font><font color="#c20cb9">tail</font>&nbsp;<font color="#660033">-n1</font>&nbsp;$<font color="#000000">2</font><font color="#000000">`</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">USER</font>=<font color="#000000">`</font><font color="#c20cb9">whoami</font><font color="#000000">`</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;git&nbsp;log&nbsp;<font color="#660033">--abbrev</font>=<font color="#000000">7</font>&nbsp;<font color="#660033">--pretty</font>=<font color="#ff0000">&quot;format:%at&nbsp;%h&nbsp;%an&quot;</font>&nbsp;<font color="#ff0000">&quot;<font color="#007800">$fname</font>&quot;</font>&nbsp;<font color="#000000">|</font>&nbsp;<font color="#000000">while</font>&nbsp;<font color="#c20cb9">read</font>&nbsp;chset<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">do</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">TIMESTAMP</font>=<font color="#000000">`</font><font color="#7a0874">echo</font>&nbsp;<font color="#007800">$chset</font><font color="#000000">|</font>&nbsp;<font color="#c20cb9">cut</font>&nbsp;<font color="#660033">-f1</font>&nbsp;<font color="#660033">-d</font><font color="#ff0000">&quot;&nbsp;&quot;</font><font color="#000000">`</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">DATE</font>=<font color="#000000">`</font><font color="#c20cb9">date</font>&nbsp;<font color="#660033">-d</font>&nbsp;<font color="#000000">@</font><font color="#ff0000">&quot;<font color="#007800">$TIMESTAMP</font>&quot;</font>&nbsp;+<font color="#ff0000">&quot;%b&nbsp;%d&nbsp;%H:%M&quot;</font><font color="#000000">`</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">NAME</font>=<font color="#000000">`</font><font color="#7a0874">echo</font>&nbsp;<font color="#007800">$chset</font><font color="#000000">|</font>&nbsp;<font color="#c20cb9">cut</font>&nbsp;<font color="#660033">-f2</font>&nbsp;<font color="#660033">-d</font><font color="#ff0000">&quot;&nbsp;&quot;</font><font color="#000000">`</font><font color="#ff0000">&quot;&nbsp;&quot;</font><font color="#000000">`</font><font color="#c20cb9">basename</font>&nbsp;<font color="#007800">$fname</font><font color="#000000">`</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#7a0874">echo</font>&nbsp;<font color="#ff0000">&quot;-rw-rw-rw-&nbsp;&nbsp;&nbsp;1&nbsp;<font color="#007800">$USER</font>&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;0&nbsp;<font color="#007800">$DATE</font>&nbsp;&nbsp;<font color="#007800">$NAME</font>&quot;</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#000000">done</font><br/>
+&nbsp;<br/>
+<font color="#7a0874">&#125;</font><br/>
+&nbsp;<br/>
+changesetfs_copyout<font color="#7a0874">&#40;</font><font color="#7a0874">&#41;</font><br/>
+<font color="#7a0874">&#123;</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">GIT_DIR</font>=<font color="#000000">`</font><font color="#c20cb9">head</font>&nbsp;<font color="#660033">-n1</font>&nbsp;$<font color="#000000">2</font><font color="#000000">`</font><font color="#ff0000">&quot;.git&quot;</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">fname</font>=<font color="#000000">`</font><font color="#c20cb9">tail</font>&nbsp;<font color="#660033">-n1</font>&nbsp;$<font color="#000000">2</font><font color="#000000">`</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">chset</font>=<font color="#000000">`</font><font color="#7a0874">echo</font>&nbsp;<font color="#ff0000">&quot;$3&quot;</font><font color="#000000">|</font>&nbsp;<font color="#c20cb9">cut</font>&nbsp;<font color="#660033">-f</font>&nbsp;<font color="#000000">1</font>&nbsp;<font color="#660033">-d</font>&nbsp;<font color="#ff0000">&quot;&nbsp;&quot;</font><font color="#000000">`</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font color="#007800">filecommit</font>=<font color="#000000">`</font>git&nbsp;show&nbsp;<font color="#660033">--raw</font>&nbsp;<font color="#660033">--pretty</font>=tformat:<font color="#000000">%</font>h&nbsp;<font color="#ff0000">&quot;<font color="#007800">$chset</font>&quot;</font>&nbsp;<font color="#ff0000">&quot;<font color="#007800">$fname</font>&quot;</font><font color="#000000">|</font><font color="#c20cb9">grep</font>&nbsp;^:<font color="#000000">|</font><font color="#c20cb9">grep</font>&nbsp;...<font color="#000000">|</font><font color="#c20cb9">cut</font>&nbsp;<font color="#660033">-f3</font>&nbsp;<font color="#660033">-d</font>&nbsp;<font color="#ff0000">&quot;&nbsp;&quot;</font><font color="#000000">|</font><font color="#c20cb9">cut</font>&nbsp;<font color="#660033">-f1</font>&nbsp;<font color="#660033">-d</font>&nbsp;<font color="#ff0000">&quot;.&quot;</font><font color="#000000">`</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;git&nbsp;show&nbsp;<font color="#ff0000">&quot;<font color="#007800">$filecommit</font>&quot;</font>&nbsp;<font color="#000000">&gt;</font>&nbsp;<font color="#ff0000">&quot;$4&quot;</font><br/>
+<font color="#7a0874">&#125;</font><br/>
+&nbsp;<br/>
+<font color="#000000">case</font>&nbsp;<font color="#ff0000">&quot;$1&quot;</font>&nbsp;<font color="#000000">in</font><br/>
+&nbsp;&nbsp;list<font color="#7a0874">&#41;</font>&nbsp;changesetfs_list&nbsp;<font color="#ff0000">&quot;$@&quot;</font>;&nbsp;<font color="#7a0874">exit</font>&nbsp;<font color="#000000">0</font><font color="#000000">;;</font><br/>
+&nbsp;&nbsp;copyout<font color="#7a0874">&#41;</font>&nbsp;changesetfs_copyout&nbsp;<font color="#ff0000">&quot;$@&quot;</font>;&nbsp;<font color="#7a0874">exit</font>&nbsp;<font color="#000000">0</font><font color="#000000">;;</font><br/>
+<font color="#000000">esac</font><br/>
+<font color="#7a0874">exit</font>&nbsp;<font color="#000000">1</font><br/>
+&nbsp;</blockquote>
+
+<h6>Подключение плагинов gitfs и gitlogfs к миднайт коммандер</h6>
+Для того чтобы любые панельные плагины подключились к mc, достаточно положить их в домашний каталог миднайт коммандера <b>~/.mc/extfs.d</b>. Для того чтобы вызывался плагин <b>gitlogfs</b> при нажатии на любой файл, начинающийся с префикса <b>(git)</b> необходимо в файле <b>~/.mc/bindings</b> добавить описание данного типа файла, примерно так:
+<blockquote><font color="#500066">regex</font><font color="#808080">/^</font>\<font color="#808080">&#40;</font>git\<font color="#808080">&#41;</font><br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#500066">Open</font><font color="#800080">=</font><font color="#808080">%</font>cd&nbsp;<font color="#808080">%</font><font color="#500066">p</font>#gitlogfs</blockquote>
+
+<h5>Иллюстрации</h5>
+Вызов <b>gitfs</b> производится командой cd #gitfs в каталоге репозитария GIT.
+<a href="http://funkyimg.com/viewer.php?img=/2/894/488/cd_gitfs_PNG.png" target="_blank"><img src="https://habrastorage.org/getpro/habr/post_images/1d8/74e/113/1d874e113126355ef512695e044431dc.png" border="0" alt="Free Image Hosting at FunkyIMG.com"></a>
+
+Навигация по репозитарию происходит как по любой файловой системе.
+<a href="http://funkyimg.com/viewer.php?img=/2/470/239/gitfs_PNG.png" target="_blank"><img src="https://habrastorage.org/getpro/habr/post_images/f39/e65/e35/f39e65e359ebad73122daf8687e533e9.png" border="0" alt="Free Image Hosting at FunkyIMG.com"></a>
+
+Вход в <b>gitlogfs</b> производится нажатием ентер на либом файле проекта с префиксом <b>(git)</b>
+<a href="http://funkyimg.com/viewer.php?img=/2/300/687/gitlogfs_PNG.png" target="_blank"><img src="https://habrastorage.org/getpro/habr/post_images/400/d5a/093/400d5a093182588ab48578bda7e0e121.png" border="0" alt="Free Image Hosting at FunkyIMG.com"></a>
+
+Сравнение 2-х произвольных ревизий файла производятся с помощью горячей клавиши Ctrl-x, Ctrl-y
+<a href="http://funkyimg.com/viewer.php?img=/2/310/066/ydiff_PNG.png" target="_blank"><img src="https://habrastorage.org/getpro/habr/post_images/4cd/a84/b1d/4cda84b1d6c510deaa0632fb155d5572.png" border="0" alt="Free Image Hosting at FunkyIMG.com"></a>
+
+							</article>
+						</main>
+
+						<div id="bottom-nav" class="text-center center-block">
+							<a href=" https://ilia-maslakov.github.io/" class="btn btn-default"><i
+									class="fa fa-home"></i> Home</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script>
+		if (window.location.hostname === "localhost") {
+			console.log("Analytics not running on local dev.");
+		} else {
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date(); a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-18735584-9', 'auto');
+			ga('send', 'pageview');
+			window.baseURL = "https:\/\/ilia-maslakov.github.io\/";
+		}
+	</script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+
+
+	<script src="../../lib/gifplayer/jquery.gifplayer.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("img[src$='_animated.png']").gifplayer({
+				label: "▶"
+			});
+		});
+	</script>
+	<script src="https://ilia-maslakov.github.io//js/App.js"></script>
+
+	<script type="text/javascript">
+		var addthis_share = addthis_share || {}
+		addthis_share = {
+			passthrough: {
+				twitter: {
+					via: "ilia_maslakov",
+					hashtags: "mc,skins,с"
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a286b9b1c027c15"
+		async></script>
+
+
+	<script src="//cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
+	<script>
+		$(function () {
+			$("#content").prognroll({
+				custom: true
+			});
+		});
+	</script>
+
+</body>
+
+</html>

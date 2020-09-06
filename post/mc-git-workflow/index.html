@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+	<meta name="theme-color" content="#ffffff">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="Midnight Commander 4.7.0-pre3">
+	<script type="application/ld+json">
+        {
+          "@context" : "http://schema.org",
+          "@type": "BlogPosting",
+            "mainEntityOfPage":{
+            "@type":"WebPage",
+            "@id":"https:\/\/ilia-maslakov.github.io\/post\/mc-4.7.0\/"
+            },
+          "headline" : "Midnight Commander 4.7.0",
+          "author" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          },
+          "publisher" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          },
+          "datePublished" : "2009-09-23",
+          "dateModified" : "2009-09-23",
+          "image" : "https:\/\/ilia-maslakov.github.io\/post\/mc-skins\/mc-black.jpg",
+          "description": "mc black schema"
+        }
+        </script>
+
+	<meta property="article:published_time" content="2009-09-22">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:url" content="https://ilia-maslakov.github.io/post//">
+	<meta property="og:title" content="Вышел Midnight Commander 4.7.0-pre3">
+	<meta property="og:image" content="https://ilia-maslakov.github.io/post/mc-skins/mc-black.jpg">
+	<meta property="og:description" content="Вышел Midnight Commander 4.7.0-pre3">
+	<meta property="og:site_name" content="Ilia Maslakov Blog">
+	<meta property="og:tags" content="mc">
+	<meta property="og:tags" content="codejump">
+	<meta property="og:tags" content="c">
+
+	<meta name="keywords" value="mc, c" />
+	<meta name="generator" content="mcedit" />
+	<title>Midnight Commander &middot; Ilia Maslakov Blog</title>
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css">
+
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/css/style.css">
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/lib/gifplayer/gifplayer.css">
+	<link href="https://ilia-maslakov.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Ilia Maslakov Blog" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+	<link rel="manifest" href="../../manifest.json">
+	<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="https://ilia-maslakov.github.io/">Ilia Maslakov</a>
+
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+
+					<li><a href="https://ilia-maslakov.github.io/">Blog</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/projects/">Projects</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/about/">About me</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+				<div id="menu-content" class="vertical-align">
+					<h1 class="text-center"><a href="https://ilia-maslakov.github.io/">Ilia Maslakov</a></h1>
+					<small class="text-center center-block">Born to code</small>
+					<img id="profile-pic" src="https://ilia-maslakov.github.io/images/7515072.jpg" alt="it's me" class="img-circle center-block">
+
+					<div id="social" class="text-center">
+						<a href="https://github.com/ilia-maslakov" title="Check my Open Source works"><i class="fa fa-github fa-2x"></i></a>
+						<a href="https://www.linkedin.com/in/ilia-maslakov/" title="Follow me on LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
+						<a href="../../index.xml" title="Be up to date - subscribe to my rss feed channel"><i class="fa fa-rss fa-2x"></i></a>
+					</div>
+					<div id="links" class="text-center">
+						<a href="https://ilia-maslakov.github.io/">Blog</a>
+						<a href="https://ilia-maslakov.github.io/projects/">Projects</a>
+						<a href="https://ilia-maslakov.github.io/about/">About me</a>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+				<div class="row">
+					<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+						<main>
+	
+							<article>
+								<header>
+									<h1>Коллективная разработка с использованием git и Trac в проекте Midnight Commander</h1>
+	
+									<div><i class="fa fa-calendar"></i> <time>27 ноября 2019</time></div>
+									<hr />
+								</header>
+&nbsp;&nbsp;&nbsp;&nbsp;Действительно, в интернете сейчас можно найти достаточно много информации о настройке GIT и работе с ним, но недостаточно освещен вопрос коллективной разработки и "рабочего процесса" отдельно взятого проекта от начала и до конца.
+
+&nbsp;&nbsp;&nbsp;&nbsp;Попробую восполнить этот пробел на примере открытого проекта Midnight Commander, не останавливаясь на вопросах установки необходимого ПО, так как этот момент неплохо описан в интернете, и вы сможете легко найти интересующую вас дополнительную информацию самостоятельно.
+<habracut />
+<h6><b>Используемые термины и определения</b></h6><ul><li><b>тикет</b> - отчёт об ошибках либо о пожеланиях, улучшениях. Иные названия - багрепорт и т.п.</li>
+<li><b>бранч</b> - ветвь разработки, существующая в системе контроля версий (в git)</li>
+<li><b>апстрим</b> - главная ветвь в системе контроля версий. Для git это обычно ветвь "master"</li>
+<li><b>стабильная ветвь</b> - ветвь отпочковавшаяся от ветви "master" тэгированная и выпущенная в качестве релиза (в дальнейшем сопровождается отдельно)</li>
+</ul>
+
+<h4><b>Исправление ошибок/добавление функционала</b></h4> 
+<h6><b>Фиксация текущего состояния разработки с помощью Trac</b></h6> 
+&nbsp;&nbsp;&nbsp;&nbsp;В нашей команде нет как такового лидера проекта, и у нас работает принцип <s>долбанной</s> демократии, т.е. решения принимаются коллегиально, большинством голосов. Чтобы принятие решений не затягивалось на долго, всё общение происходит в джаббер конференции в реальном времени. Кто не успел -- тот опоздал :). Но если решение требует голосов всех активных разработчиков, то заводится отдельный тикет для голосования на Trac-е проекта.
+Чтобы не было хаоса в процессе разработки, мы приняли ряд регламентов, оговаривающих непосредственный "рабочий процесс". Процесс сводится к нескольким этапам:
+<ul>
+	<li>выявление проблемы </li>
+	<li>создание тикета на Trac-е</li>
+	<li>принятие разработчиком тикета в работу </li>
+	<li>публикация работы в виде бранча</li>
+        <li>обсуждение в комнате найденного решения, проверка работоспособности, аудит кода </li>
+	<li>утверждение бранча, если необходимое количество разработчиков сочли решение приемлимым </li>
+	<li>влитие бранча в апстрим</li>
+</ul>
+&nbsp;&nbsp;&nbsp;&nbsp;Если один из разработчиков решает исправить проблему, описанную в тикете, или хочет добавить новый функционал - он назначает себя владельцем тикета и в дальнейшем считается ответственным за решение данной проблемы. Теперь он наблюдает за тикетом (общается с постановщиком задачи, следит за тем -- не предложил ли кто то из сторонних разработчиков своего "решения" в виде патчей и т.п.), создает новую ветку (бранч) для последующей работы в ней. Новые ветки обязательно должны следовать правилам наименования: <b>XYZ_<здесь_некоторое_описание></b> 
+где XYZ - это номер тикета; описание по возможности должно быть осмысленным и коротким. 
+&nbsp;&nbsp;&nbsp;&nbsp;Патчи из тикета никогда не применяются непосредственно к ветви "master", а проходят всегда процедуру обсуждения и ревизии в виде отдельной ветви.
+&nbsp;&nbsp;&nbsp;&nbsp;После создания ветви и публикации ее в репозитарии ответственный за тикет разработчик выставляет ветвь на ревизию (review) для того, чтобы другие разработчики смогли увидеть что данный тикет готов к ревизии и обсуждению. Если это не сделано и тикет не выставлен на review - ветвь считается нестабильной и подлежит дальнейшей разработке.
+
+&nbsp;&nbsp;&nbsp;&nbsp;В качестве примера приведу тикет <a href="http://www.midnight-commander.org/ticket/1746">#1746</a>, в нем некто bilbo описал суть проблемы со встроенным ftp клиентом и приложил патч устраняющий проблему. 
+Далее в этом же тикете он сообщает о публикации в репозитории новой ветви <b>1746_passive_mode_over_proxy</b> и выставлении ее на голосование.
+<blockquote>
+<font color="#15A315">
+    * owner  set to bilbo
+    * status changed from new to accepted
+    * severity  changed from <b>no branch</b> to <b>on review</b>
+Created branch <b>1746_passive_mode_over_proxy</b>
+Initial changeset: <b>b32c9e4a2a15cd50a6a07ad85b1a587328bd2cfc</b></font></blockquote>
+После просмотра кода двое разработчиков проголосовали за данный код и обозначили его как утвержденный (approved).
+<blockquote>
+<font color="#15A315">
+    * votes  changed from slavazanko to slavazanko andrew_b
+    * severity changed from <b>on review</b> to <b>approved</b>
+</font></blockquote>
+Далее разработчик произвел слияние своей ветви <b>1746_passive_mode_over_proxy</b> с основной ветвью <b>master</b> и сообщил об этом в тикете:
+<blockquote>
+<font color="#15A315">
+    * status  changed from accepted to testing
+    * votes changed from <b>slavazanko andrew_b</b> to <b>commited-master</b>
+    * resolution set to <b>fixed</b>
+    * severity changed from <b>approved</b> to <b>merged</b>
+Fixed <b>2cfed22012ded42c2f4f47a13edc05bf405842db</b>
+</font></blockquote>
+<h6><b>Работа с кодом под контролем GIT</b></h6>
+Работа над кодом с использованием git, в пределах одного тикета, сводится к следующим шагам:
+
+переключение на ветвь "master"
+<blockquote>
+      $ git checkout master
+</blockquote>                
+получение последних изменений
+<blockquote>
+      $ git pull
+</blockquote>
+создание локального бранча, согласно правил наименования этого самого бранча
+<blockquote>
+      $ git checkout -b 123_branch_name
+</blockquote>
+Далее разработчик вносит изменения в исходные тексты и коммитит изменения...
+
+фиксация изменений
+<blockquote>
+      $ git commit file.1 file.2 file.3
+</blockquote>
+публикация ветви 
+<blockquote>
+      $ git-publish-branch
+</blockquote>
+скрипт git-publish-branch можно скачать <a href="http://git-wt-commit.rubyforge.org/git-publish-branch">тут</a>
+
+<h6><b>Ревизия кода</b></h6> 
+&nbsp;&nbsp;&nbsp;&nbsp;Так же, как существует руководство по созданию тикетов -- существует и руководство по их обзору. 
+Основные принципы, которыми мы пользуемся при обзоре кода, хорошо и ёмко изложены в статье, перевод которой опубликован здесь <b><a href="http://habrahabr.ru/blogs/code_review/64086/">"Я ненавижу тебя: твой код – хлам!"</a></b>.
+&nbsp;&nbsp;&nbsp;&nbsp;Разработчик, взваливший на себя ответственность за ревизию кода, должен в процессе обзора получить для себя ответы на следующие вопросы:
+<ul>
+	<li> является ли патч вкладывающимся в общую концепцию проекта или патч является "хаком"?</li>
+	<li> аккуратно ли выглядит код?</li>
+	<li> делает ли код то, что должен делать (что было задекларировано в комментарии к патчу)?</li>
+	<li> добавляет ли код новые проблемы (ошибки)? </li>
+</ul>
+&nbsp;&nbsp;&nbsp;&nbsp;Если патч нравится (выглядит приемлемым), то разработчик-рецензент должен добавить свой голос в поле для голосования (Votes for changeset) в формате &lt;login&gt;, где login - это имя пользователя в Trac. Если же патч не совсем безгрешный, то необходимо написать об этом ответственному за тикет и сменить статус тикета с <b>review</b> на <b>rework</b>
+&nbsp;&nbsp;&nbsp;&nbsp;В настоящее время необходимы голоса двух разработчиков чтобы патч был применён к родительской ветви (либо к ветви "master"). Если кто-либо из рецензентов добавляет свой голос вторым, то ему необходимо также сменить статус тикета на <b>approved</b> (утверждено).
+&nbsp;&nbsp;&nbsp;&nbsp;В ходе обсуждения в тикете, либо в ходе просмотра патчей разработчики могут убирать свои голоса при возникновении каких-либо проблем. 
+
+Идеальный вариант тестирования:
+<blockquote>
+ $ git checkout master
+ $ git reset --hard origin/master
+ $ git pull
+ $ git merge --log --no-ff origin/123_branch_name
+</blockquote>
+вариант попроще
+<blockquote>
+ $ git checkout origin/123_branch_name -b 123_branch_name 
+</blockquote>
+Далее сборка, тестирование, просмотр кода, рецензия.
+
+<h6><b>Применение патчей</b></h6> 
+&nbsp;&nbsp;&nbsp;&nbsp;После процедуры ревизии и получения необходимого количества голосов за бранч, разработчик может влить свои изменения в основной ствол репозитория. При этом также должны быть соблюдены регламенты:
+<ul>
+<li>НИКОГДА(!!!) не производить перебазирование (rebase) стабильной ветки относительно "master", чтобы объединить исправления!</li>
+<li>Обязательно в первом описании коммита указать номер тикета в формате, относительно которого был создан бранч, примерно так:  
+<blockquote>
+Ticket #123 (ticket summary)
+<пустая строка>
+add: some text...
+fix: some text...
+</blockquote>
+<b><font color="#747474">
+это поможет в дальнейшем связать, через описание первого коммита, влитый бранч с номером тикета на Trac-е.
+</font></b>
+</li>
+<li>
+Обязательно произвести перебазирование своего бранча относительно родительской ветви.
+
+например если бранч основан на ветви "master"
+<blockquote>
+ $ git checkout master
+ $ git pull
+ $ git checkout 123_branch_name
+ $ git rebase -i origin/master
+</blockquote>
+<font color="#747474">ключ -i указывается если нужно произвести интерактивное перебазирование (если нужно удалить/склеить/переставить отдельные коммиты)</font>
+
+После этого надо обновить ветвь на сервере
+<blockquote>
+ $ git push origin +123_branch_name
+</blockquote><font color="#747474">"+" указывает что нужно произвести принудительное (forced) обновление коммитов в удаленном бранче</font>
+
+<b>NB: Если не сделать перебазирование, то возможна ситуация когда другие разработчики уже влили свои конкурирующие изменения в нашу родительскую ветвь, и в лучшем случае история в ней будет путанной и сумбурной, а в худшем -- родительская ветвь перестанет собираться либо будет работать некорректно. </b>
+</li>
+
+<li>
+Выполнить слияние с родительской ветвью
+<blockquote>
+ $ git checkout master
+ $ git merge --log --no-ff 123_branch_name
+</blockquote>
+<font color="#747474">ключ --log показывает в коммите слияния, список патчей которые вводятся этим слиянием;
+ключ --no-ff позволяет сгенерировать коммит слияния даже в том случае, если ветвь является дочерней от вершины родителя (по нему проще отследить, какие патчи были сделаны в рамках данного тикета). Этот ключ значительно упрощает понимание взаимосвязей коммитов. </font>
+
+обновление данных в удаленном репозитарии
+<blockquote>
+ $ git push origin master
+</blockquote>
+удаление ветви 123_branch_name на сервере и локально 
+<blockquote>
+ $ git push origin :123_branch_name 
+ $ git branch -d 123_branch_name 
+</blockquote>
+</li>
+<li>
+Обязательно зафиксировать факт слияния в тикете, как было сказано выше, написав комментарий в виде 
+<blockquote>
+Fixed <b>2cfed22012ded42c2f4f47a13edc05bf405842db</b>
+</blockquote>
+где <b>2cfed22012ded42c2f4f47a13edc05bf405842db</b> - это мерж-коммит бранча.
+</li>
+<li>
+Закрыть тикет с указанием статуса <b>"merged"</b>
+</li>
+</ul>
+
+Уфф... кажется все, спасибо за внимание... 
+
+
+
+PS: Был бы рад прочитать как это работает у вас.							</article>
+						</main>
+
+						<div id="bottom-nav" class="text-center center-block">
+							<a href=" https://ilia-maslakov.github.io/" class="btn btn-default"><i
+									class="fa fa-home"></i> Home</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script>
+		if (window.location.hostname === "localhost") {
+			console.log("Analytics not running on local dev.");
+		} else {
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date(); a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-18735584-9', 'auto');
+			ga('send', 'pageview');
+			window.baseURL = "https:\/\/ilia-maslakov.github.io\/";
+		}
+	</script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+
+
+	<script src="../../lib/gifplayer/jquery.gifplayer.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("img[src$='_animated.png']").gifplayer({
+				label: "▶"
+			});
+		});
+	</script>
+	<script src="https://ilia-maslakov.github.io//js/App.js"></script>
+
+	<script type="text/javascript">
+		var addthis_share = addthis_share || {}
+		addthis_share = {
+			passthrough: {
+				twitter: {
+					via: "ilia_maslakov",
+					hashtags: "mc,skins,с"
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a286b9b1c027c15"
+		async></script>
+
+
+	<script src="//cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
+	<script>
+		$(function () {
+			$("#content").prognroll({
+				custom: true
+			});
+		});
+	</script>
+
+</body>
+
+</html>

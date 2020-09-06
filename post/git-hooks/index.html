@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+	<meta name="theme-color" content="#ffffff">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="Midnight Commander 4.7.0-pre3">
+	<script type="application/ld+json">
+        {
+          "@context" : "http://schema.org",
+          "@type": "BlogPosting",
+            "mainEntityOfPage":{
+            "@type":"WebPage",
+            "@id":"https:\/\/ilia-maslakov.github.io\/post\/mc-4.7.0\/"
+            },
+          "headline" : "Midnight Commander 4.7.0",
+          "author" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          },
+          "publisher" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          },
+          "datePublished" : "2009-09-23",
+          "dateModified" : "2009-09-23",
+          "image" : "https:\/\/ilia-maslakov.github.io\/post\/mc-skins\/mc-black.jpg",
+          "description": "mc black schema"
+        }
+        </script>
+
+	<meta property="article:published_time" content="2009-09-22">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:url" content="https://ilia-maslakov.github.io/post//">
+	<meta property="og:title" content="Вышел Midnight Commander 4.7.0-pre3">
+	<meta property="og:image" content="https://ilia-maslakov.github.io/post/mc-skins/mc-black.jpg">
+	<meta property="og:description" content="Вышел Midnight Commander 4.7.0-pre3">
+	<meta property="og:site_name" content="Ilia Maslakov Blog">
+	<meta property="og:tags" content="mc">
+	<meta property="og:tags" content="codejump">
+	<meta property="og:tags" content="c">
+
+	<meta name="keywords" value="mc, c" />
+	<meta name="generator" content="mcedit" />
+	<title>Midnight Commander &middot; Ilia Maslakov Blog</title>
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css">
+
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/css/style.css">
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/lib/gifplayer/gifplayer.css">
+	<link href="https://ilia-maslakov.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Ilia Maslakov Blog" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+	<link rel="manifest" href="../../manifest.json">
+	<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="https://ilia-maslakov.github.io/">Ilia Maslakov</a>
+
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+
+					<li><a href="https://ilia-maslakov.github.io/">Blog</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/projects/">Projects</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/about/">About me</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+				<div id="menu-content" class="vertical-align">
+					<h1 class="text-center"><a href="https://ilia-maslakov.github.io/">Ilia Maslakov</a></h1>
+					<small class="text-center center-block">Born to code</small>
+					<img id="profile-pic" src="https://ilia-maslakov.github.io/images/7515072.jpg" alt="it's me" class="img-circle center-block">
+
+					<div id="social" class="text-center">
+						<a href="https://github.com/ilia-maslakov" title="Check my Open Source works"><i class="fa fa-github fa-2x"></i></a>
+						<a href="https://www.linkedin.com/in/ilia-maslakov/" title="Follow me on LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
+						<a href="../../index.xml" title="Be up to date - subscribe to my rss feed channel"><i class="fa fa-rss fa-2x"></i></a>
+					</div>
+					<div id="links" class="text-center">
+						<a href="https://ilia-maslakov.github.io/">Blog</a>
+						<a href="https://ilia-maslakov.github.io/projects/">Projects</a>
+						<a href="https://ilia-maslakov.github.io/about/">About me</a>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+				<div class="row">
+					<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+						<main>
+	
+							<article>
+								<header>
+									<h1>Пример использования хуков (hooks) в git</h1>
+	
+									<div><i class="fa fa-calendar"></i> <time>12 ноября 2009</time></div>
+									<hr />
+								</header>
+Для того чтобы познакомиться с механизмом хуков в git, достаточно просто начать их использовать и посмотреть как оно работает, и как оно устроено внутри.
+Хуки в git это некие скрипты, срабатывающие на определенные события, по сути своей являются их обработчиками. Расположены они в каталоге .git/hooks.
+
+Для примера попробуем сделать простенький обработчик. Его задача поместить в редактируемое описание к коммиту нужную нам информацию. 
+
+Итак создадим в каталоге .git/hooks нашего проекта скрипт <b>prepare-commit-msg</b> со следующим содержимым:
+
+<blockquote>
+<code>
+<font color="#A31515">#!/bin/sh</font>
+
+#получаем последний коммит в <b>master</b> от которого отпочковался наш бранч
+last_master=`git log origin/master| head -n 1|cut -f 2 -d ' '`;
+#получаем текущий коммит 
+parent=`git log | head -n 1|cut -f 2 -d ' '`;
+#выделяем из имени бранча номер тикета. Бранч всегда называется по шаблону Номер_Краткое_Описание
+#например <b>1364_restore_xterm_title</b>
+ticket=`git branch|grep '* '|cut -f 1 -d '_'|cut -f 2 -d ' '`;
+
+#если это первый коммит в бранче то вначале описания к коммиту добавляем <b>Ticket #Номер</b>
+if [ "$last_master" == "$parent" ]; then
+echo "Ticket #$ticket" &#62; "$1".tmp;
+fi
+
+# берем из переменной GIT_AUTHOR_IDENT имя текущего коммитера
+SOB=$(git var GIT_AUTHOR_IDENT | sed -n "s/^\(.*&#62;\).*$/Signed-off-by: \1/p")
+grep -qs "^$SOB""$1"|| echo "$SOB" &#62;&#62; "$1".tmp;
+
+#выделяем из вывода команды diff только строки содержащие "+++", "---", "@@" 
+(echo; git diff --cached| grep -e "+++" -e "---" -e "@@"|sed -e 's/.*/# &#38;/')&#62;&#62; "$1".tmp;
+#убираем пустые строки
+(echo; sed -e '/^$/d' "$1") &#62;&#62; "$1".tmp
+mv "$1".tmp "$1";
+</code>
+</blockquote>
+
+Скрипт вставляет подпись коммитера и добавляет список измененных функций данным коммитом. Кроме того, так как у нас в проекте строго регламентированный рабочий процесс, согласно которому оформление коммитов должно производиться определенным образом, то для своего удобства я добавил вставку номера тикета в начало описания коммита, но только если это первый коммит в бранче.
+
+Этот хук работает на стороне клиента и как видно из названия, срабатывает он в момент вызова <b>git commit</b>.
+
+
+							</article>
+						</main>
+
+						<div id="bottom-nav" class="text-center center-block">
+							<a href=" https://ilia-maslakov.github.io/" class="btn btn-default"><i
+									class="fa fa-home"></i> Home</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script>
+		if (window.location.hostname === "localhost") {
+			console.log("Analytics not running on local dev.");
+		} else {
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date(); a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-18735584-9', 'auto');
+			ga('send', 'pageview');
+			window.baseURL = "https:\/\/ilia-maslakov.github.io\/";
+		}
+	</script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+
+
+	<script src="../../lib/gifplayer/jquery.gifplayer.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("img[src$='_animated.png']").gifplayer({
+				label: "▶"
+			});
+		});
+	</script>
+	<script src="https://ilia-maslakov.github.io//js/App.js"></script>
+
+	<script type="text/javascript">
+		var addthis_share = addthis_share || {}
+		addthis_share = {
+			passthrough: {
+				twitter: {
+					via: "ilia_maslakov",
+					hashtags: "mc,skins,с"
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a286b9b1c027c15"
+		async></script>
+
+
+	<script src="//cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
+	<script>
+		$(function () {
+			$("#content").prognroll({
+				custom: true
+			});
+		});
+	</script>
+
+</body>
+
+</html>

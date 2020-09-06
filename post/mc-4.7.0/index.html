@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+	<meta name="theme-color" content="#ffffff">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="Midnight Commander 4.7.0-pre3">
+	<script type="application/ld+json">
+        {
+          "@context" : "http://schema.org",
+          "@type": "BlogPosting",
+            "mainEntityOfPage":{
+            "@type":"WebPage",
+            "@id":"https:\/\/ilia-maslakov.github.io\/post\/mc-4.7.0\/"
+            },
+          "headline" : "Midnight Commander 4.7.0",
+          "author" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          },
+          "publisher" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          },
+          "datePublished" : "2009-09-23",
+          "dateModified" : "2009-09-23",
+          "image" : "https:\/\/ilia-maslakov.github.io\/post\/mc-skins\/mc-black.jpg",
+          "description": "mc black schema"
+        }
+        </script>
+
+	<meta property="article:published_time" content="2009-09-22">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:url" content="https://ilia-maslakov.github.io/post//">
+	<meta property="og:title" content="Вышел Midnight Commander 4.7.0-pre3">
+	<meta property="og:image" content="https://ilia-maslakov.github.io/post/mc-skins/mc-black.jpg">
+	<meta property="og:description" content="Вышел Midnight Commander 4.7.0-pre3">
+	<meta property="og:site_name" content="Ilia Maslakov Blog">
+	<meta property="og:tags" content="mc">
+	<meta property="og:tags" content="codejump">
+	<meta property="og:tags" content="c">
+
+	<meta name="keywords" value="mc, c" />
+	<meta name="generator" content="mcedit" />
+	<title>Midnight Commander &middot; Ilia Maslakov Blog</title>
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css">
+
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/css/style.css">
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/lib/gifplayer/gifplayer.css">
+	<link href="https://ilia-maslakov.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Ilia Maslakov Blog" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+	<link rel="manifest" href="../../manifest.json">
+	<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="https://ilia-maslakov.github.io/">Ilia Maslakov</a>
+
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+
+					<li><a href="https://ilia-maslakov.github.io/">Blog</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/projects/">Projects</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/about/">About me</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+				<div id="menu-content" class="vertical-align">
+					<h1 class="text-center"><a href="https://ilia-maslakov.github.io/">Ilia Maslakov</a></h1>
+					<small class="text-center center-block">Born to code</small>
+					<img id="profile-pic" src="https://ilia-maslakov.github.io/images/7515072.jpg" alt="it's me" class="img-circle center-block">
+
+					<div id="social" class="text-center">
+						<a href="https://github.com/ilia-maslakov" title="Check my Open Source works"><i class="fa fa-github fa-2x"></i></a>
+						<a href="https://www.linkedin.com/in/ilia-maslakov/" title="Follow me on LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
+						<a href="../../index.xml" title="Be up to date - subscribe to my rss feed channel"><i class="fa fa-rss fa-2x"></i></a>
+					</div>
+					<div id="links" class="text-center">
+						<a href="https://ilia-maslakov.github.io/">Blog</a>
+						<a href="https://ilia-maslakov.github.io/projects/">Projects</a>
+						<a href="https://ilia-maslakov.github.io/about/">About me</a>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+				<div class="row">
+					<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+						<main>
+	
+							<article>
+								<header>
+									<h1>Midnight Commander 4.7.0-pre3</h1>
+	
+									<div><i class="fa fa-calendar"></i> <time>22 сентября 2009</time></div>
+									<hr />
+	
+								</header>
+Сегодня, после месяца прошедшего с выхода предыдущей версии, замечательного файлового менеджера под линукс (и не только:)), была опубликована новость о выходе mc 4.7.0-pre3. 
+Кроме исправления найденных ошибок и добавления новых :) (а как без этого?) в ней произошли следующие немаловажные изменения:
+<ul>
+	<li>  Появился механизм смены оформления (скины)</li>
+	<li>  Появился механизм смены предопределенных быстрых клавиш</li>
+</ul>
+Теперь вы можете назначить практически любые сочетания в замен существующих, и сделать либо похожим на VIM либо на FAR...
+<habracut text="Список изменений" />
+<h2>Список основных изменений относительно версии 4.7.0-pre2</h2>
+<h4>Общее</h4><ul><li> для обработки параметров командной строки используется GLib вместо собственной реализации</li>
+<li> реализована подсветка файлов по типу и расширению в панелях</li>
+<li> оптимизировано отображение имени файла, в диалоге предупреждения при копировании/переносе файлов</li>
+<li> при первом запуске поиска файлов поля ввода заполняются значениями из истории</li>
+<li> теперь параметр поддержки множественных кодировок (--enable-charset), включен по умолчанию</li>
+<li> реализован механизм "скинов" (рамки, цветовые схемы)</li>
+<li> реализован механизм переназначения клавиш (панели, командная строка, редактор, вьювер) </li>
+</ul><h4>VFS</h4><ul><li> исправлена работа с tar.xz-файлами</li>
+<li> добавлено распознание lzma-архивов по расширению </li>
+</ul><h4>Editor</h4><ul><li> в диалоге сохранения файлов "Сохранить как" теперь можно выбрать вид конца строки: Windows/UNIX/Mac (CR LF/LF/CR)</li>
+<li> обновлена подсветка синтаксиса для VerilogHDL, Shell script (скрипты командной оболочки)</li>
+<li> добавлена подсветка синтаксиса для .repo (yum), PKGBUILD, .install</li>
+</ul><h4>Вьювер</h4><ul><li> исправлена проблема с отображением файлов с Windows- и Mac-концами строк (CR LF/CR)</li>
+</ul><h4>Разное</h4><ul><li> в элементе hotlist добавлена поддержка переменных окружения ($HOME, ~username, и т. п.)</li>
+<li> в элементе hotlist добавлена поддержка автодополнения</li>
+<li> быстрая навигация по спискам с помощью цифровых клавиш ("4" - выбирает 5-й элемент и т. д.)</li>
+</ul><h4>Исправление ошибок</h4><ul><li> устранено падение mc при разборе некорректной строки палитры цветов</li>
+<li> исправлено неправильное позиционирование диалога выбора кодировки панели при горизонтальном расположении панелей</li>
+<li> устранено ограничение в 9 цифр на отображение разменов файла в ранели</li>
+<li> исправлено отображение линий в режиме "stickchars" (опция -a)</li>
+<li> устранено падение mc при не анонимном входе на FTP</li>
+<li> исправлено поведение mc в терминале "Screen" при нажатии Ctrl-O</li>
+<li> поддержка локали CP866 (IBM866)</li>
+<li> доработана проверка версии glib в конфигурационном файле configure.ac (необходим GLib 2.6 и выше)</li>
+<li> устранено падение mc при прокрутке с помощью колеса мыши в меню и списке истории</li>
+<li> исправлена пометка текста с помощью Meta+PgDn (Alt+PgDn)</li>
+<li> исправлено поведения курсора при использовании Ctrl+стрелок в случае когда, курсор находится за пределами конца строки </li>
+<li> исправлено автодополнение в редакторе</li>
+<li> исправлено поведение Meta-d (Alt-d) в диалогах копирования/перемещения файлов</li>
+<li> исправлена проблема при сборке с параметром --with-gpm-mouse</li>
+</ul>
+
+<b>Upd:</b> Cкачать можно здесь http://www.midnight-commander.org/downloads							</article>
+
+
+							<br />
+
+						</main>
+
+						<div id="bottom-nav" class="text-center center-block">
+							<a href=" https://ilia-maslakov.github.io/" class="btn btn-default"><i
+									class="fa fa-home"></i> Home</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script>
+		if (window.location.hostname === "localhost") {
+			console.log("Analytics not running on local dev.");
+		} else {
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date(); a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-18735584-9', 'auto');
+			ga('send', 'pageview');
+			window.baseURL = "https:\/\/ilia-maslakov.github.io\/";
+		}
+	</script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+
+
+	<script src="../../lib/gifplayer/jquery.gifplayer.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("img[src$='_animated.png']").gifplayer({
+				label: "▶"
+			});
+		});
+	</script>
+	<script src="https://ilia-maslakov.github.io//js/App.js"></script>
+
+	<script type="text/javascript">
+		var addthis_share = addthis_share || {}
+		addthis_share = {
+			passthrough: {
+				twitter: {
+					via: "ilia_maslakov",
+					hashtags: "mc,skins,с"
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a286b9b1c027c15"
+		async></script>
+
+
+	<script src="//cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
+	<script>
+		$(function () {
+			$("#content").prognroll({
+				custom: true
+			});
+		});
+	</script>
+
+</body>
+
+</html>

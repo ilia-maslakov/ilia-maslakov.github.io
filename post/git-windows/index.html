@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# website: http://ogp.me/ns/website#">
+	<meta name="theme-color" content="#ffffff">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+	<meta name="description" content="Midnight Commander 4.7.0-pre3">
+	<script type="application/ld+json">
+        {
+          "@context" : "http://schema.org",
+          "@type": "BlogPosting",
+            "mainEntityOfPage":{
+            "@type":"WebPage",
+            "@id":"https:\/\/ilia-maslakov.github.io\/post\/mc-4.7.0\/"
+            },
+          "headline" : "Midnight Commander 4.7.0",
+          "author" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          },
+          "publisher" : {
+            "@type" : "Person",
+            "name" : "Ilia Maslakov"
+          },
+          "datePublished" : "2009-09-23",
+          "dateModified" : "2009-09-23",
+          "image" : "https:\/\/ilia-maslakov.github.io\/post\/mc-skins\/mc-black.jpg",
+          "description": "mc black schema"
+        }
+        </script>
+
+	<meta property="article:published_time" content="2009-09-22">
+	<meta property="og:type" content="article">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:url" content="https://ilia-maslakov.github.io/post//">
+	<meta property="og:title" content="Вышел Midnight Commander 4.7.0-pre3">
+	<meta property="og:image" content="https://ilia-maslakov.github.io/post/mc-skins/mc-black.jpg">
+	<meta property="og:description" content="Вышел Midnight Commander 4.7.0-pre3">
+	<meta property="og:site_name" content="Ilia Maslakov Blog">
+	<meta property="og:tags" content="mc">
+	<meta property="og:tags" content="codejump">
+	<meta property="og:tags" content="c">
+
+	<meta name="keywords" value="mc, c" />
+	<meta name="generator" content="mcedit" />
+	<title>Midnight Commander &middot; Ilia Maslakov Blog</title>
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/a11y-dark.min.css">
+
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/css/style.css">
+	<link rel="stylesheet" href="https://ilia-maslakov.github.io/lib/gifplayer/gifplayer.css">
+	<link href="https://ilia-maslakov.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Ilia Maslakov Blog" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="../../apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../../favicon-16x16.png">
+	<link rel="manifest" href="../../manifest.json">
+	<link rel="mask-icon" href="../../safari-pinned-tab.svg" color="#5bbad5">
+
+</head>
+
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top visible-xs">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="https://ilia-maslakov.github.io/">Ilia Maslakov</a>
+
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+
+
+					<li><a href="https://ilia-maslakov.github.io/">Blog</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/projects/">Projects</a></li>
+
+					<li><a href="https://ilia-maslakov.github.io/about/">About me</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row">
+			<div id="menu" class="hidden-xs col-sm-4 col-md-3">
+				<div id="menu-content" class="vertical-align">
+					<h1 class="text-center"><a href="https://ilia-maslakov.github.io/">Ilia Maslakov</a></h1>
+					<small class="text-center center-block">Born to code</small>
+					<img id="profile-pic" src="https://ilia-maslakov.github.io/images/7515072.jpg" alt="it's me" class="img-circle center-block">
+
+					<div id="social" class="text-center">
+						<a href="https://github.com/ilia-maslakov" title="Check my Open Source works"><i class="fa fa-github fa-2x"></i></a>
+						<a href="https://www.linkedin.com/in/ilia-maslakov/" title="Follow me on LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
+						<a href="../../index.xml" title="Be up to date - subscribe to my rss feed channel"><i class="fa fa-rss fa-2x"></i></a>
+					</div>
+					<div id="links" class="text-center">
+						<a href="https://ilia-maslakov.github.io/">Blog</a>
+						<a href="https://ilia-maslakov.github.io/projects/">Projects</a>
+						<a href="https://ilia-maslakov.github.io/about/">About me</a>
+
+					</div>
+				</div>
+			</div>
+
+			<div id="content" class="col-xs-12 col-sm-8 col-md-9">
+				<div class="row">
+					<div id="post" class="col-sm-offset-1 col-sm-10 col-md-10 col-lg-8">
+
+						<main>
+	
+							<article>
+								<header>
+									<h1>Устранение проблем с русскими символами в git</h1>
+	
+									<div><i class="fa fa-calendar"></i> <time>10 ноября 2009</time></div>
+									<hr />
+	
+								</header>
+<h6><b>Проблемы с русскими символами в git</b></h6>
+Когда вы начнете работать с версией <a href="http://code.google.com/p/msysgit/downloads/list">git под windows</a> в командной строке, вы столкнётесь со следующей проблемой -- все сообщения git, в которых фигурируют русские символы будут нечитаемы. Имена файлов, на русском языке, будут выглядеть так -- <b>"\362\345\361\362"</b>, а тексты коммитов примерно так -- <b>&lt;C8&gt;&lt;ED&gt;&lt;E8&gt;&lt;F6&gt;&lt;E8&gt;&lt;E0&gt;&lt;EB&gt;&lt;E8&gt;&lt;E7&gt;&lt;E0&gt;&lt;F6&gt;&lt;E8&gt;&lt;FF&gt; &lt;EF&gt;&lt;F0&gt;&lt;EE&gt;&lt;E5&gt;&lt;EA&gt;&lt;F2&gt;&lt;E0&gt;</b>. Т.е. исходная строка преобразуется в utf8 в соответствии с кодировкой latin1.
+
+<h6><b>Устранение проблем</b></h6>
+Для примера я создал каталог <b>rep</b> на диске <b>C:</b>, создал в нем новый файл с именем <b>тест</b> и инициализировал новый репозиторий. После этого добавил в  репозиторий все файлы из текущего каталога.
+<blockquote>
+<pre>
+C:\rep>git init
+Initialized empty Git repository in C:/rep/.git/
+
+C:\rep>git add .
+</pre>
+</blockquote>
+Видно что файлы с русскими буквами, показываются не в той кодировке, в которой бы мы смогли их без проблем прочесть.
+<blockquote>
+<pre>
+C:\rep>git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add &lt;file&gt;..." to include in what will be committed)
+#
+#       "\362\345\361\362"
+nothing added to commit but untracked files present (use "git add" to track)
+</pre>
+</blockquote>
+Чтобы исправить такое поведение git необходимо изменить параметр <b>quotepath</b> в секции <b>[core]</b>, установив его в <b>false</b>. 
+<blockquote>
+  quotepath = false 
+</blockquote>
+
+<font color="red"><em><b>NB:</b></em></font> Поменять можно либо глобальный файл настроек либо локальный.
+
+Глобальный файл настроек находится здесь C:\Program Files\Git\etc\gitconfig, локальный в каталоге репозитория .git\config. 
+
+Следующая проблема возникает при редактировании описания коммита. 
+<blockquote>
+<pre>
+C:\rep>git commit -a -s
+</pre>
+</blockquote>
+Если отредактировать и сохранить коммит в 8-битной кодировке, то появится следующее сообщение:
+<blockquote>
+<pre>
+Warning: commit message does not conform to UTF-8.
+You may want to amend it after fixing the message, or set the config
+variable i18n.commitencoding to the encoding your project uses.
+[master (root-commit) cc05f8a] ╚эшЎшрышчрЎш  яЁюхъЄр Signed-off-by: maslakov &lt;maslakov@mail.local&gt;
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+ create mode 100644 "\362\345\361\362"
+</pre>
+</blockquote>
+Соответственно необходимо указать кодировку в которой будут вносится описания коммитов, в секции <b>[i18n]</b>, параметр <b>commitencoding</b>
+<blockquote>
+  commitencoding = cp1251
+</blockquote>
+Третья проблема, которая возникает при работе с консольным интерфейсом git в это вывод лога: 
+<blockquote>
+<pre>
+C:\rep>git log
+</pre>
+</blockquote>
+по умолчанию он выглядит так
+<blockquote>
+<pre>
+commit cc05f8a470e8602ded60ba9c979c93148b334d4e
+Author: maslakov &lt;maslakov@mail.local&gt;
+Date:   Tue Nov 10 12:37:38 2009 +0300
+    &lt;C8&gt;&lt;ED&gt;&lt;E8&gt;&lt;F6&gt;&lt;E8&gt;&lt;E0&gt;&lt;EB&gt;&lt;E8&gt;&lt;E7&gt;&lt;E0&gt;&lt;F6&gt;&lt;E8&gt;&lt;FF&gt; &lt;EF&gt;&lt;F0&gt;&lt;EE&gt;&lt;E5&gt;&lt;EA&gt;&lt;F2&gt;&lt;E0&gt;
+    Signed-off-by: maslakov &lt;maslakov@mail.local&gt;
+</pre>
+</blockquote>
+Как показало вскрытие в этом "виновата" утилита <b>less</b>, убедить её показывать текст правильно поможет установка переменной окружения <b>LESSCHARSET=koi8-r</b> или можно просто указать в качестве вьювера утилиту <b>cat</b>. Чтобы текст показывался постранично, передать вывод утилиты <b>cat</b> утилите <b>more</b>.
+Кроме того необходимо задать параметр  <b>logoutputencoding</b> в секции <b>[i18n]</b>
+<blockquote>
+  logoutputencoding = cp866
+</blockquote>
+В принципе, после установки вышеуказанных настроек, основные проблемы использования национальных языков, в 8-битyных кодировках, будут решены. 
+Вот мой файл \.git\config
+<blockquote>
+<pre>
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+        quotepath = false 
+        pager = cat|more.com
+        editor = far -e
+[i18n]
+        commitencoding = cp1251
+        logoutputencoding = cp866
+</pre>
+</blockquote>
+
+Текст коммитов я редактирую в far, поэтому параметр <b>editor</b> у меня определен как <b>far -e</b>
+
+Надеюсь кому-то данная информация будет полезна...
+
+<b>UPD: спасибо Алексею Шумкину за дополнение</b><br>
+<code>ashu> я нашёл решение для less
+http://www.linuxcenter.ru/lib/books/kostromin/gl_11_05.phtml
+вкратце - нужно установить переменную окружения LESSCHARSET=koi8-r (у меня под Cygwin 1.5 заработало)</code>
+
+
+<b>UPD2: спасибо <hh user="hokum"/> за дополнение</b><br>
+К сожалению, приведенные решения не помогли побороть проблему с выводом русских символов в выводе команд git diff, git show. 
+
+К установленному Git в каталог bin скопировал iconv.exe, а в конфиг Git'а прописал:
+pager = iconv.exe -f cp1251 -t utf-8 | less
+файлы проекта у меня соответственно в кодировке cp1251.
+
+Файл  iconv.exe можно найти скачав архив с бинарными файлами проекта iconv под Windows http://gnuwin32.sourceforge.net/packages/libiconv.htm.
+Дополнительно к нему понадобяться dll:
+libcharset1.dll
+libiconv2.dll (у меня уже был в установке Git, заменять не стал)
+libintl3.dll ( из архива Dependencies, оттуда же откуда качается iconv)
+							</article>
+						</main>
+
+						<div id="bottom-nav" class="text-center center-block">
+							<a href=" https://ilia-maslakov.github.io/" class="btn btn-default"><i
+									class="fa fa-home"></i> Home</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	<script>
+		if (window.location.hostname === "localhost") {
+			console.log("Analytics not running on local dev.");
+		} else {
+			(function (i, s, o, g, r, a, m) {
+				i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+					(i[r].q = i[r].q || []).push(arguments)
+				}, i[r].l = 1 * new Date(); a = s.createElement(o),
+					m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+			ga('create', 'UA-18735584-9', 'auto');
+			ga('send', 'pageview');
+			window.baseURL = "https:\/\/ilia-maslakov.github.io\/";
+		}
+	</script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+
+
+	<script src="../../lib/gifplayer/jquery.gifplayer.js"></script>
+	<script>
+		$(document).ready(function () {
+			$("img[src$='_animated.png']").gifplayer({
+				label: "▶"
+			});
+		});
+	</script>
+	<script src="https://ilia-maslakov.github.io//js/App.js"></script>
+
+	<script type="text/javascript">
+		var addthis_share = addthis_share || {}
+		addthis_share = {
+			passthrough: {
+				twitter: {
+					via: "ilia_maslakov",
+					hashtags: "mc,skins,с"
+				}
+			}
+		}
+	</script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5a286b9b1c027c15"
+		async></script>
+
+
+	<script src="//cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js"></script>
+	<script>
+		$(function () {
+			$("#content").prognroll({
+				custom: true
+			});
+		});
+	</script>
+
+</body>
+
+</html>
