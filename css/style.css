@@ -33,7 +33,7 @@ ins.play-gif{
     margin: auto auto;
 }
 .video-container{
-	margin: 15px auto;	
+	margin: 15px auto;
 }
 #social{
 		background-color: rgba(200,200,200,0.3);
@@ -87,15 +87,15 @@ ins.play-gif{
 
 #menu{
     border-top: 0px!important;
-    background-image: webkit-linear-gradient(to bottom, #368ec1, #00141f)!important;    
-    background-image: linear-gradient(to bottom, #368ec1, #00141f)!important;    
+    background-image: webkit-linear-gradient(to bottom, #368ec1, #00141f)!important;
+    background-image: linear-gradient(to bottom, #368ec1, #00141f)!important;
 }
 
 #menu h1 a{
     color: white!important;
 }
 #content{
-    border-top: 0px!important;    
+    border-top: 0px!important;
 }
 #links a{
     color: white;
